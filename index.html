@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF Gameplay Trailer Quote Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Bungee+Inline&family=Cinzel:wght@700&family=Cinzel+Decorative:wght@700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+    <script defer src="config.js"></script>
+    <script defer src="pixel-canvas.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <!-- Header Bar -->
+    <header class="header-bar">
+        <nav class="navbar is-fixed-top" role="navigation">
+            <div class="navbar-brand">
+                <img src="https://thetrailerfarm.com/assets/img/logo-white.svg" alt="The Trailer Farm" class="navbar-item logo">
+                <h1 class="navbar-item title is-4">Gameplay Trailer Quote Builder</h1>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Options Bar -->
+    <div class="options-bar">
+        <div class="buttons">
+            <button class="button" id="importBtn">
+                <span class="icon"><i class="fas fa-file-import"></i></span>
+                <span>Import</span>
+            </button>
+            <button class="button" id="exportBtn">
+                <span class="icon"><i class="fas fa-file-export"></i></span>
+                <span>Export</span>
+            </button>
+            <button class="button" id="pdfBtn">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+            </button>
+        </div>
+        <div class="currency-buttons">
+            <button class="button is-small currency-btn" data-currency="USD">
+                <img src="https://flagcdn.com/w20/us.png" alt="USD" title="US Dollar">
+            </button>
+            <button class="button is-small currency-btn" data-currency="EUR">
+                <img src="https://flagcdn.com/w20/eu.png" alt="EUR" title="Euro">
+            </button>
+            <button class="button is-small currency-btn" data-currency="GBP">
+                <img src="https://flagcdn.com/w20/gb.png" alt="GBP" title="British Pound">
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tiers-section" id="tiersSection">
+            <!-- Tiers will be dynamically added here -->
+        </div>
+        
+        <!-- Form Section -->
+        <div id="formSection" class="form-section">
+            <!-- Form questions will be dynamically added here -->
+        </div>
+    </main>
+
+    <!-- Summary Bar -->
+    <div class="summary-bar">
+        <div class="summary-content">
+            <div class="summary-text" id="summaryText">
+                Selected options: 0
+            </div>
+            <div class="summary-total" id="summaryTotal">
+                Total: $0.00
+            </div>
+            <button class="button is-primary" id="generateQuoteBtn">
+                Generate Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer Bar -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>© 2024 Your Company Name. All rights reserved.</p>
+            <p>
+                <a href="/privacy">Privacy Policy</a> |
+                <a href="/terms">Terms of Service</a> |
+                <a href="/contact">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html> 
